@@ -1,10 +1,13 @@
 # PAROL-commander-software
+
 [![License: MIT](https://img.shields.io/badge/license-GPLv3-blue)](https://opensource.org/license/gpl-3-0/)  ![Issues](https://img.shields.io/github/issues/PCrnjak/PAROL-commander-software) ![release](https://img.shields.io/github/v/release/PCrnjak/PAROL-commander-software) [![Powered by the Robotics Toolbox](https://raw.githubusercontent.com/petercorke/robotics-toolbox-python/master/.github/svg/rtb_powered.min.svg)](https://github.com/petercorke/robotics-toolbox-python)
 
 
 <img src="Images/screen_2.png" alt="drawing" width="700"/>
 
-https://source-robotics.com
+> [!CAUTION]
+> You can use [Experimental kineamtics branch](https://github.com/PCrnjak/PAROL-commander-software/tree/experimental_kinematics) which resolves most Cartesian jogging errors but introduces potentially dangerous conditions. Use experimental kinematics branch at your own risk, as it may damage the robot! Main branch is safe.
+>
 
 To use commander software your PC needs to meet some [minimal hardware specs!](https://github.com/PCrnjak/PAROL-commander-software/blob/main/confirmed_working_systems.md)
 
@@ -33,6 +36,9 @@ PAROL6 is a high-performance 3D-printed desktop robotic arm. The design approach
 
 To run the PAROL6 robotic arm with commander software you will need to meet some minimal PC specifications.
 Check already tested systems and compare them to your system: [Compare](https://github.com/PCrnjak/PAROL-commander-software/blob/main/confirmed_working_systems.md)
+
+## Python API
+If you are not interested in GUI control and simulator you can use Python API to control the robot - [Python API](https://github.com/PCrnjak/PAROL6-python-API)
 
 # How to install 
 
@@ -67,27 +73,6 @@ Join [Discord](https://discord.com/invite/prjUvjmGpZ ) community!
 - [DOCS](https://source-robotics.github.io/PAROL-docs/)
 
   
-# 📢📢Contributing to the project 📢📢
-Some features are still missing on the software and hardware side of the PAROL6.<br />
-If you want to contribute to the project and don't know how you can help in the implementation of some of these features:
-
-General features:
-  - ROS2 support
-  - Moveit example
-  - ROBODK postprocessor
-  - TODO -> Stepper driver stages need to go to short or all fets low when the power button is pressed
-  - TODO ->Implement Swift simulator - https://github.com/jhavl/swift
-  - TODO -> Create executable files for windows and Linux
-
-  PAROL6 commander software features:
-  - Reading GCODE commands
-  - Reading inputs
-  - implementing flow control
-  - Graphical simulator?
-  - Saving programs to the Control board Flash
-  - Offline execution of the code (from the flash)
-  - Blending in trajectory planner
-
 # Liability 
 1. The software is still in development and may contain bugs, errors, or incomplete features.
 2. Users are encouraged to use this software responsibly and at their own risk.
